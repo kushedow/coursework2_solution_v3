@@ -1,2 +1,2 @@
-POST_PATH = "data/data.json"
-COMMENTS_PATH = "data/comments.json"
+POST_PATH = "app/posts/data/data.json"
+COMMENTS_PATH = "app/posts/data/comments.json"

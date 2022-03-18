@@ -1,7 +1,7 @@
-from flask import Flask, request, render_template
+from flask import Flask
 
-from main.views import main_blueprint
-from api.views import api_blueprint
+from app.posts.views import main_blueprint
+from app.api.views import api_blueprint
 
 app = Flask(__name__)
 

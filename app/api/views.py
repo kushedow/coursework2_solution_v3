@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
 
-from classes.posts_dao import PostsDAO
-from classes.comments_dao import CommentsDAO
+from app.posts.dao.posts_dao import PostsDAO
+from app.posts.dao.comments_dao import CommentsDAO
 from config import POST_PATH, COMMENTS_PATH
 
 api_blueprint = Blueprint('api_blueprint', __name__)

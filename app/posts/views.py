@@ -1,8 +1,8 @@
 from flask import Blueprint, render_template, request
-from classes.posts_dao import PostsDAO
-from classes.comments_dao import CommentsDAO
+from app.posts.dao.posts_dao import PostsDAO
+from app.posts.dao.comments_dao import CommentsDAO
 
-main_blueprint = Blueprint('main_blueprint', __name__)
+main_blueprint = Blueprint('main_blueprint', __name__,  template_folder='templates')
 
 from config import POST_PATH
 from config import COMMENTS_PATH
